@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`format should output correct formatted log 1`] = `"[2m[13:53:15.520][22m [33mfoobar[39m {\\"extra\\":\\"qux\\"} "`;
