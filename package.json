@@ -1,6 +1,6 @@
 {
   "name": "@calipsa/log-formatter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JavaScript log formatter",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
