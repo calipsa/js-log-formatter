@@ -10,6 +10,7 @@ interface Omitted {
   hostname?: string,
   pid?: number,
   v?: number,
+  severity?: string,
 }
 
 interface Log extends Omitted {
@@ -24,6 +25,7 @@ const omittedProps = [
   'hostname',
   'pid',
   'v',
+  'severity',
 ] as const
 
 export = (data: Log) => {
