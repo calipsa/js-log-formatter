@@ -6,10 +6,10 @@ import formatError from './formatError'
 import formatExtraData from './formatExtraData'
 
 interface Omitted {
-  name: string,
-  hostname: string,
-  pid: number,
-  v: number,
+  name?: string,
+  hostname?: string,
+  pid?: number,
+  v?: number,
 }
 
 interface Log extends Omitted {
