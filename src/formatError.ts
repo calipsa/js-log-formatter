@@ -1,4 +1,4 @@
 import chalk from 'chalk'
 
-export default (err: string) =>
-  chalk.dim.redBright(`\n${err}`)
+export default (err: Error) =>
+  chalk.dim.redBright(`\n${err.stack}`)

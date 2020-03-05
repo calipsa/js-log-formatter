@@ -17,7 +17,7 @@ interface Log extends Omitted {
   level: number,
   time: Date,
   msg: any,
-  err?: any,
+  err?: Error,
 }
 
 const omittedProps = [
