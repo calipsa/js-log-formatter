@@ -1,26 +1,26 @@
 export default [
   {
     n: 10,
-    description: 'trace',
+    description: 'TRACE',
   },
   {
     n: 20,
-    description: 'debug',
+    description: 'DEBUG',
   },
   {
     n: 30,
-    description: 'info',
+    description: 'INFO',
   },
   {
     n: 40,
-    description: 'warn',
+    description: 'WARN',
   },
   {
     n: 50,
-    description: 'error',
+    description: 'ERROR',
   },
   {
     n: 60,
-    description: 'fatal',
+    description: 'FATAL',
   },
 ] as const

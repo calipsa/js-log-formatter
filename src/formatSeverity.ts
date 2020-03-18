@@ -1,10 +1,15 @@
+import levels from './levels'
 import colorize from './colorize'
 
-import levels from './levels'
+const maxDescLen = Math.max(...levels.map(i => i.description.length))
+const dummySpaces = ' '.repeat(maxDescLen)
 
 export default (level: number) => {
   const levelO = levels.find(item => item.n === level)
-  return levelO
-    ? colorize(levelO.n)(levelO.description.toUpperCase())
-    : ''
+  if (!levelO) {
+    return dummySpaces
+  }
+  const s = levelO.description ?? ''
+  const paddedS = s.padStart(maxDescLen, ' ')
+  return colorize(levelO.n)(paddedS)
 }
