@@ -1,9 +1,9 @@
 import omit from 'lodash/omit'
 
-import colorize from './colorize'
 import formatTime from './formatTime'
 import formatError from './formatError'
 import formatExtraData from './formatExtraData'
+import formatSeverity from './formatSeverity'
 
 interface Omitted {
   name?: string,
@@ -38,8 +38,8 @@ export = (data: Log) => {
   } = omit(data, omittedProps)
 
   const timestamp = formatTime(time)
-  const outData = colorize(level)(msg)
+  const severityData = formatSeverity(level)
   const errData = err ? formatError(err) : ''
   const extraData = formatExtraData(rest)
-  return `${timestamp} ${outData} ${extraData} ${errData}`
+  return `${timestamp} ${severityData}: ${msg} ${extraData} ${errData}`
 }
