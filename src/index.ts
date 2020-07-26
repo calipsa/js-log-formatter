@@ -1,4 +1,4 @@
-import omit from 'lodash/omit'
+import { omit } from 'lodash'
 
 import formatTime from './formatTime'
 import formatError from './formatError'
