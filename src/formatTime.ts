@@ -1,7 +1,10 @@
 import chalk from 'chalk'
-import format from 'date-fns/fp/format'
+import { formatDateTz } from '@calipsa/tz-utils'
 
-const formatTime = format('HH:mm:ss.SSS')
+const TZ = 'Europe/London'
+const FORMAT = 'HH:mm:ss.SSS'
 
-export default (time: Date) =>
-  chalk.dim(`[${formatTime(time)}]`)
+export default (time: Date) => {
+  const s = formatDateTz(time, FORMAT, TZ)
+  return chalk.dim(`[${s}]`)
+}

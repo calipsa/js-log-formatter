@@ -29,8 +29,8 @@
   "author": "Anton Veselev",
   "license": "ISC",
   "dependencies": {
+    "@calipsa/tz-utils": "^1.0.3",
     "chalk": "^4.1.0",
-    "date-fns": "^2.16.1",
     "lodash": "^4.17.20"
   },
   "devDependencies": {
