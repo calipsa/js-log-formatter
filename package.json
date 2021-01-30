@@ -10,7 +10,7 @@
     "es"
   ],
   "scripts": {
-    "test": "jest --no-cache",
+    "test": "jest --no-cache --colors",
     "lint": "eslint './src/**/*.ts'",
     "build:commonjs": "tsc --outDir dist",
     "buildwip:es": "tsc -m ESNext --outDir es",
